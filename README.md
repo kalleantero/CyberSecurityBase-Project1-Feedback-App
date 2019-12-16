@@ -2,7 +2,7 @@
 
 ## About CyberSecurityBase course
 
-This is a excersice project related to Cyber Security Base 2019-2020 course (https://cybersecuritybase.mooc.fi/.
+This is a exercise project related to Cyber Security Base 2019-2020 course (https://cybersecuritybase.mooc.fi/.
 
 ## Project description
 
