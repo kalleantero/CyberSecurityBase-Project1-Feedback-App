@@ -1,0 +1,39 @@
+<h1>Feedbacks</h1>
+
+<p *ngIf="!feedbacks"><em>Loading...</em></p>
+
+<div id="search" *ngIf="isUser">
+  <h3>Search feedbacks</h3>
+
+  <form #search="ngForm" (ngSubmit)="onClickSubmit(search.value)">
+    <div class="form-group">
+      <input type="text" class="form-control" id="search" name="search" aria-describedby="searchHelp" placeholder="Enter keyword" [(ngModel)]="keyword" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+</div>
+
+<table class='table' *ngIf="feedbacks">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>User Id</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Subject</th>
+      <th>Content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let feedback of feedbacks">
+      <td>{{ feedback.id }}</td>
+      <td>{{ feedback.userId }}</td>
+      <td>{{ feedback.firstName }}</td>
+      <td>{{ feedback.lastName }}</td>
+      <td>{{ feedback.subject }}</td>
+      <td><p [innerHTML]="feedback.content | safe: 'html'"></p></td>
+    </tr>
+  </tbody>
+
+</table>

@@ -1,1 +1,2 @@
-# CyberSecurityBase-Project1-Feedback-App
+# CyberSecurityBase-Feedback-App
+CyberSecurityBase exercise project 1

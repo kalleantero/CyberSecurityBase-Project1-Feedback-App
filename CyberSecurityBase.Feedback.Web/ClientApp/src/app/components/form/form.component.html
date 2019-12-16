@@ -1,0 +1,24 @@
+<h1>Feedback form</h1>
+<form #feedback="ngForm" (ngSubmit)="onClickSubmit(feedback.value)">
+  <div class="form-group">
+    <label for="firstNameLabel">First name</label>
+    <input type="text" class="form-control" id="firstNameLabel" name="firstName" aria-describedby="firstNameHelp" placeholder="Enter first name" [(ngModel)]="givenName" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="lastNameLabel">Last name</label>
+    <input type="text" class="form-control" id="lastNameLabel" name="lastName" aria-describedby="lastNameHelp" placeholder="Enter last name" [(ngModel)]="familyName" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="subjectLabel">Subject</label>
+    <input type="text" class="form-control" id="subjectLabel" name="subject" aria-describedby="subjectHelp" placeholder="Enter subject of the feedback" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="emailLabel">Email address</label>
+    <input type="email" class="form-control" id="emailLabel" name="email" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="email" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="contentLabel">Content</label>
+    <ckeditor data="<p>Hello, world!</p>" name="content" id="content" ngModel></ckeditor>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

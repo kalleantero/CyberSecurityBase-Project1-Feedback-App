@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CyberSecurityBase
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/CyberSecurityBase-Project1-Feedback-App/v16/.suo
+/.vs/CyberSecurityBase-Feedback-App-Private/v16
+/CyberSecurityBase.Feedback.Api/bin
+/CyberSecurityBase.Feedback.Api/obj/Debug/netcoreapp2.1
+/CyberSecurityBase.Feedback.Idp/.vs/IdentityServer4InMem
+/CyberSecurityBase.Feedback.Idp/bin
+/CyberSecurityBase.Feedback.Idp/obj
